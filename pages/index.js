@@ -16,10 +16,10 @@ export function Home() {
         <View style={ESTILO.container}>
             <Image source={require("../assets/logo.png")} style={ESTILO.logo} />
             <Text style={ESTILO.caracteres}>
-                {qtde} Caracteres
+                {qtde} Estrelas
             </Text>
             <View style={ESTILO.area}>
-                <Slider style={{ height: 50 }} minimumValue={6} maximumValue={20} minimumTrackTintColor="#ff0000"
+                <Slider style={{ height: 50 }} minimumValue={1} maximumValue={6} minimumTrackTintColor="#ff0000"
                     maximumTrackTintColor="#000"
                     thumbTintColor="#392de9"
                     value={qtde}
@@ -27,7 +27,7 @@ export function Home() {
             </View>
             <TouchableOpacity style={ESTILO.button} onPress={gerarToken}>
                 <Text style={ESTILO.buttonText}>
-                    Gerar Senha
+                    Avalie nossos serviços
                 </Text>
             </TouchableOpacity>
             <Modal visible={telaModal} animationType="fade" transparent={true}>
@@ -40,14 +40,14 @@ export function Home() {
 const ESTILO = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: "#f3f3ff",
+        backgroundColor: "#fff",
         justifyContent: 'center',
         alignItems: 'center'
     },
     logo: {
         marginBottom: 60,
-        width: 200,
-        height: 250,
+        width: 300,
+        height: 350,
     },
     area: {
         marginBottom: 14,
@@ -58,7 +58,7 @@ const ESTILO = StyleSheet.create({
         padding: 8
     },
     button: {
-        backgroundColor: "#392de9",
+        backgroundColor: "#BB2335",
         width: "80%",
         height: 50,
         justifyContent: 'center',

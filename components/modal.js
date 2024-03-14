@@ -8,22 +8,17 @@ export function ModalTokens({handleClose}) {
         <View style={ESTILO.container}>
             <View style={ESTILO.content}>
                 <Text style={ESTILO.title}>
-                    Senha Gerada
+                    Obrigado
                 </Text>
                 <Pressable style={ESTILO.innerToken} >
                     <Text style={ESTILO.text} >
-                        senha
+                        Avaliação
                     </Text>
                 </Pressable>
                 <View style={ESTILO.buttonArea}>
                     <TouchableOpacity style={ESTILO.button} onPress={handleClose} >
                         <Text style={ESTILO.buttonText} >
                             Voltar
-                        </Text>
-                    </TouchableOpacity>
-                    <TouchableOpacity style={[ESTILO.button, ESTILO.buttonSave]} >
-                        <Text style={ESTILO.buttonSaveText}>
-                            Salvar Senha
                         </Text>
                     </TouchableOpacity>
                 </View>
